@@ -15,8 +15,15 @@ importers:
         specifier: 5.12.1
         version: 5.12.1(@types/node@24.0.15)(rollup@4.45.1)(typescript@5.8.3)
       sharp:
-        specifier: ^0.34.2
+        specifier: ^0.34.3
         version: 0.34.3
+    devDependencies:
+      '@nodecfdi/prettier-config':
+        specifier: ^1.4.1
+        version: 1.4.1(prettier@3.6.2)
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
 
 packages:
 
@@ -482,6 +489,12 @@ packages:
 
   '@mdx-js/mdx@3.1.0':
     resolution: {integrity: sha512-/QxEhPAvGwbQmy1Px8F899L5Uc2KZ6JtXwlCgJmjSTBedwOZkByYcBG4GceIGPXRDsmfxhHazuS+hlOShRLeDw==}
+
+  '@nodecfdi/prettier-config@1.4.1':
+    resolution: {integrity: sha512-U2DbNUoiEhQDtEuVH1mUxU1CKvpJAvam7X0SH2h9eneBv7ZtyXGaZnyTxLaSUPmrzzNgHMydxvcwzoCkmseqSg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      prettier: ^3.4.2
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
@@ -1455,6 +1468,11 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   prismjs@1.30.0:
     resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
     engines: {node: '>=6'}
@@ -2335,6 +2353,10 @@ snapshots:
     transitivePeerDependencies:
       - acorn
       - supports-color
+
+  '@nodecfdi/prettier-config@1.4.1(prettier@3.6.2)':
+    dependencies:
+      prettier: 3.6.2
 
   '@oslojs/encoding@1.1.0': {}
 
@@ -3760,6 +3782,8 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  prettier@3.6.2: {}
 
   prismjs@1.30.0: {}
 
