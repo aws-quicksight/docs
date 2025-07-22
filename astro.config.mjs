@@ -10,6 +10,9 @@ export default defineConfig({
       tagline: "QuickSight API's and assets developed independently",
       description: 'AWS CDK and AWS Lambda functions for managing Quicksight assets',
       favicon: '/favicon.ico',
+      logo: {
+        src: './src/assets/factorbi_logo.png',
+      },
       social: [
         {
           icon: 'github',
@@ -30,6 +33,8 @@ export default defineConfig({
           autogenerate: { directory: 'reference' },
         },
       ],
+      lastUpdated: true,
+      pagination: false,
     }),
   ],
 });

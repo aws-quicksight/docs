@@ -1,4 +1,4 @@
-import nodecfdiPrettierConfig from '@nodecfdi/prettier-config';
+import nodecfdiPrettierConfig from '@nodecfdi/prettier-config/pkg';
 
 /** @type {import('prettier').Config} */
 const config = {
